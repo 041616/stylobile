@@ -1,0 +1,45 @@
+{
+  "name": "slylobile",
+  "version": "1.0.0",
+  "title": "Styled components & CSS modules",
+  "main": "dist/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --progress",
+    "clean": "rm -rfd node_modules dist",
+    "build": "npm run clean && npm i;webpack --progress --mode='production'"
+  },
+  "keywords": [
+    "styled components",
+    "CSS modules",
+    "themes"
+  ],
+  "author": "Oleh Tarasov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/041616/stylobile"
+  },
+  "bugs": {
+    "url": "https://github.com/041616/stylobile/issues"
+  },
+  "homepage": "https://github.com/041616/stylobile",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@evo/eslint-config-uaprom": "^2.0.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
