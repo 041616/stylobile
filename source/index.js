@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { isMobile } from './utils';
+import { Title } from './components/CompanyName';
+import { Title as Title2 } from './components/comp';
 
-const Hello = () => <span>Hello world!</span>;
 
 if (isMobile) {
-    ReactDOM.render(<Hello />, document.getElementById('app'));
+    ReactDOM.render((
+        <div>
+            <Title />
+            <Title2 />
+        </div>
+    ), document.getElementById('app'));
 }
