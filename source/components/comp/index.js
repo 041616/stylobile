@@ -1,9 +1,19 @@
 import React from 'react';
 import css from './style.sss';
+import { ThemeContext } from '../../theme';
 
 
-export const Title = () => {
-    return (
-        <span className={css.qwe}>asdasdasd</span>
-    );
-};
+export class Title extends React.Component {
+    static contextType = ThemeContext;
+
+    render() {
+        const { colors } = this.context;
+        const style = {
+            color: colors.foreground,
+            background: colors.background,
+        };
+        return (
+            <span className={css.qwe} style={style}>asdasdasd</span>
+        );
+    }
+}
